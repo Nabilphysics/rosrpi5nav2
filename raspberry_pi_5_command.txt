@@ -1,0 +1,20 @@
+sudo nano /boot/firmware/config.txt
+usb_max_current_enable=1
+
+
+sudo -E rpi-eeprom-config --edit
+
+PSU_MAX_CURRENT=5000
+
+
+
+sudo glmark2
+
+sudo vcgencmd measure_temp
+sudo vcgencmd get_config arm_freq
+vcgencmd get_config gpu_freq
+vcgencmd get_throttled
+
+sudo watch -n1 vcgencmd measure_temp
+stress-ng --cpu 0 --cpu-method fft
+
