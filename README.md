@@ -1,5 +1,5 @@
 # Raspberry Pi 5 ROS 2 Differential-Drive Robot
-
+(Readme is made using ChatGPT)
 A custom four-wheel mobile robot using **ROS 2 Jazzy**, a **Raspberry Pi 5**, an **Arduino Uno**, and an **LD19 LiDAR**. The project includes motor speed control, encoder-based odometry, a robot description, launch files, and configuration for SLAM and Nav2 navigation.
 
 **Author:** [Syed Razwanul Haque (Nabil)](https://github.com/Nabilphysics)
